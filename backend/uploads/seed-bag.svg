@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#caf0f8"/>
+  <path d="M280 210 Q400 120 520 210" stroke="#023e8a" stroke-width="28" fill="none"/>
+  <rect x="260" y="200" width="280" height="260" rx="28" fill="#0077b6"/>
+  <rect x="300" y="250" width="200" height="120" rx="16" fill="#90e0ef"/>
+  <text x="400" y="520" text-anchor="middle" font-family="Arial" font-size="28" fill="#03045e">Kids Backpack</text>
+</svg>

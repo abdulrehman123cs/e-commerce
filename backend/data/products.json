@@ -1,0 +1,65 @@
+[
+  {
+    "id": "2e0e17b4-3fef-4af6-82c6-7de5009d6515",
+    "name": "royal",
+    "category": "perfume",
+    "price": 2000,
+    "stock": 14,
+    "description": "its fregnace to prety",
+    "image": "/uploads/1788603911820-5282b243-c575-432e-80dc-6cc867be7226.png"
+  },
+  {
+    "id": "toy-001",
+    "name": "Remote Control Racing Car",
+    "category": "toys",
+    "price": 2499,
+    "stock": 18,
+    "description": "Fast RC car with rechargeable battery, LED lights, and 2.4GHz remote. Great for kids 6+.",
+    "image": "/uploads/seed-car.svg"
+  },
+  {
+    "id": "toy-002",
+    "name": "Building Blocks Mega Set",
+    "category": "toys",
+    "price": 1899,
+    "stock": 24,
+    "description": "250-piece colorful building blocks to spark creativity and motor skills.",
+    "image": "/uploads/seed-blocks.svg"
+  },
+  {
+    "id": "toy-003",
+    "name": "Plush Teddy Bear",
+    "category": "toys",
+    "price": 999,
+    "stock": 30,
+    "description": "Soft 40cm teddy bear with embroidered eyes. Safe for toddlers.",
+    "image": "/uploads/seed-teddy.svg"
+  },
+  {
+    "id": "perf-001",
+    "name": "Royal Oud Perfume 100ml",
+    "category": "perfume",
+    "price": 3299,
+    "stock": 12,
+    "description": "Long-lasting oud fragrance with woody notes. Unisex gift-ready bottle.",
+    "image": "/uploads/seed-oud.svg"
+  },
+  {
+    "id": "perf-002",
+    "name": "Rose Bloom Eau de Parfum",
+    "category": "perfume",
+    "price": 2199,
+    "stock": 16,
+    "description": "Fresh floral rose scent for daily wear. 80ml spray bottle.",
+    "image": "/uploads/seed-rose.svg"
+  },
+  {
+    "id": "other-001",
+    "name": "Kids School Backpack",
+    "category": "other",
+    "price": 1499,
+    "stock": 20,
+    "description": "Durable cartoon backpack with water-bottle pocket and padded straps.",
+    "image": "/uploads/seed-bag.svg"
+  }
+]

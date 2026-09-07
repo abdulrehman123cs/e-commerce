@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#ffe5ec"/>
+  <rect x="355" y="110" width="90" height="36" rx="8" fill="#c9184a"/>
+  <rect x="370" y="146" width="60" height="36" fill="#ff758f"/>
+  <rect x="325" y="182" width="150" height="270" rx="70" fill="#ffb3c1"/>
+  <circle cx="400" cy="280" r="38" fill="#c9184a"/>
+  <text x="400" y="520" text-anchor="middle" font-family="Arial" font-size="28" fill="#800f2f">Rose Bloom</text>
+</svg>
