@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import { api, categoryLabel, getToken, money, setToken } from "../api.js";
+import { api, categoryLabel, getToken, mediaUrl, money, setToken } from "../api.js";
+import { useSeo } from "../hooks/useSeo.js";
 
 const emptyForm = {
   name: "",
@@ -18,6 +19,13 @@ export default function Admin() {
   const [orders, setOrders] = useState([]);
   const [editing, setEditing] = useState(null);
   const [message, setMessage] = useState("");
+
+  useSeo({
+    title: "Admin",
+    description: "Staff dashboard for Riaz Toye Center.",
+    path: "/admin",
+    noindex: true,
+  });
 
   const load = async () => {
     const [plist, olist] = await Promise.all([api.products(), api.orders().catch(() => [])]);
@@ -106,7 +114,7 @@ export default function Admin() {
             value={login.password}
             onChange={(e) => setLogin({ ...login, password: e.target.value })}
           />
-          <button className="btn">Login</button>
+          <button className="btn btn-buy">Login</button>
           <p className="hint">Default: admin / riaz123</p>
           {message && <p className="status">{message}</p>}
         </form>
@@ -121,7 +129,7 @@ export default function Admin() {
           <p className="eyebrow">Riaz Toye Center</p>
           <h1>Admin dashboard</h1>
         </div>
-        <button className="btn ghost" onClick={logout}>
+        <button className="btn btn-soft" onClick={logout}>
           Logout
         </button>
       </div>
@@ -173,11 +181,11 @@ export default function Admin() {
           />
         </label>
         <div className="card-actions">
-          <button className="btn">{editing ? "Save changes" : "Add product"}</button>
+          <button className="btn btn-buy">{editing ? "Save changes" : "Add product"}</button>
           {editing && (
             <button
               type="button"
-              className="btn ghost"
+              className="btn btn-soft"
               onClick={() => {
                 setEditing(null);
                 setForm(emptyForm);
@@ -209,7 +217,7 @@ export default function Admin() {
                 <tr key={p.id}>
                   <td>
                     {p.image ? (
-                      <img className="thumb" src={p.image} alt="" />
+                      <img className="thumb" src={mediaUrl(p.image)} alt="" />
                     ) : (
                       "—"
                     )}

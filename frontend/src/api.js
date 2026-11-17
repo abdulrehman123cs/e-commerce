@@ -1,5 +1,11 @@
 const ADMIN_KEY = "riaz_admin_token";
 
+export function mediaUrl(src) {
+  if (!src) return "";
+  if (/^https?:\/\//i.test(src)) return src;
+  return src.startsWith("/") ? src : `/${src}`;
+}
+
 export const money = (n) =>
   `Rs ${Number(n || 0).toLocaleString("en-PK")}`;
 
